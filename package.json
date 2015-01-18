@@ -1,0 +1,26 @@
+{
+  "name": "shekhardesigner",
+  "version": "1.0.0",
+  "description": "Personal Homepage ",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shekhardesigner/shekhardesigner.github.io"
+  },
+  "keywords": [
+    "JavaScript",
+    "Frontend",
+    "SASS",
+    "AngularJS"
+  ],
+  "author": "@shekhardesigner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shekhardesigner/shekhardesigner.github.io/issues"
+  },
+  "homepage": "http://shekhardesigner.com/",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-htmlmin": "^0.3.0"
+  }
+}
