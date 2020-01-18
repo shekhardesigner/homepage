@@ -1,0 +1,33 @@
+{
+  "name": "shekhardesigner",
+  "private": true,
+  "description": "Homepage for Shekhar K. Sharma",
+  "version": "3.0.0",
+  "author": {
+    "name": "Shekhar K. Sharma <hello@shekhardesigner.com>",
+    "url": "https://shekhardesigner.com"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby": "^2.18.12",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-styled-components": "^3.1.17",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^5.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
