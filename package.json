@@ -10,7 +10,7 @@
   "scripts": {
     "prebuild": "rm -rf docs/**",
     "build": "gatsby build",
-    "postbuild": "mv public docs && rm -rf public",
+    "postbuild": "mv public/** docs/ && rm -rf public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
