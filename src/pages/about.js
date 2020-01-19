@@ -12,4 +12,5 @@ export default () => <Container>
     <p>By 2014, I was already working for the world's top tech company.</p>
     <p>As of 2020, I am back in my native country Nepal having traveled half of the world.</p>
     <p>Speaking of my <strong>skillset</strong>, I posses strong knowledge in JavaScript (NodeJS, React, SailsJS), User Experience design (Prototyping new solutions), etc.</p>
+    <p>View my <a href="/Shekhar_K_Sharma_Resume.pdf">resume</a>.</p>
 </Container>
