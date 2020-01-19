@@ -22,6 +22,14 @@ module.exports = {
         ],
         display: `swap`
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-16286907-2`,
+        anonymize: true,
+        respectDNT: true,
+      }
     }
   ]
 }
