@@ -16,6 +16,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            image
           }
         }
       }
@@ -50,16 +51,20 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          property: `og:image`,
+          content: `/${site.siteMetadata.image}`,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          name: `twitter:card`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:site`,
-          content: site.siteMetadata.author,
+          content: `@{site.siteMetadata.author}`,
+        },
+        {
+          name: `twitter:creator`,
+          content: `@${site.siteMetadata.author}`,
         },
         {
           name: `twitter:title`,
@@ -69,6 +74,14 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:image`,
+          content: `/${site.siteMetadata.image}`,
+        },
+        {
+          name: `twitter:image:alt`,
+          content: `Shekhar., banner of shekhardesigner.com website`
+        }
       ].concat(meta)}
     >
     </Helmet>
