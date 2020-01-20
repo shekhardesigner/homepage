@@ -6,8 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Shekhar K. Sharma - a Software Engineering Professional`,
-    description: `Portfolio of Shekhar K. Sharma, a seasoned user experience designer, and a full-stack web developer. I serve the clients worldwide, working remotely from Kathmandu Nepal.`,
+    title: `UX Designer & Full-stack Developer | Shekhar K. Sharma | Nepal`,
+    description: `Portfolio of Shekhar K. Sharma, a seasoned user experience designer, and a full-stack web developer. I serve the clients worldwide.`,
     author: `shekhardesigner`
   },
   plugins: [

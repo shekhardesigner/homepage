@@ -23,7 +23,7 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const siteTitle = `${title} | ${site.siteMetadata.title}`
+  const siteTitle = title ? `${title} | ${site.siteMetadata.title}` : site.siteMetadata.title;
 
   return (
     <Helmet
