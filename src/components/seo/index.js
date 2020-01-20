@@ -60,7 +60,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:site`,
-          content: `@{site.siteMetadata.author}`,
+          content: `@${site.siteMetadata.author}`,
         },
         {
           name: `twitter:creator`,
