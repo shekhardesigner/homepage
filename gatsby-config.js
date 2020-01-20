@@ -20,6 +20,7 @@ module.exports = {
         fonts: [
           `Abril Fatface\:400`,
           `Quicksand\:300,500`,
+          `Stalemate`
         ],
         display: `swap`
       },
