@@ -28,3 +28,13 @@
         padding: 1rem 0 3rem;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .header {
+        background: #333;
+    }
+
+    .page_title {
+        color: #eee;
+    }
+}

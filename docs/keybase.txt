@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/shekhardesigner
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://shekhardesigner.com
+  * I am shekhardesigner (https://keybase.io/shekhardesigner) on keybase.
+  * I have a public key ASC-clBlIT-rhCEBoceGnSaabdyIyhqSc0qSfjPAEe_v9Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120be725065213fab842101a1c7869d269a6ddc88ca1a92734a927e33c011efeff50a",
+      "host": "keybase.io",
+      "kid": "0120be725065213fab842101a1c7869d269a6ddc88ca1a92734a927e33c011efeff50a",
+      "uid": "3d43de987db10982a9d15e45996d3319",
+      "username": "shekhardesigner"
+    },
+    "merkle_root": {
+      "ctime": 1558703075,
+      "hash": "8dc9bc1a5b74160ec0cc59e0ec884a5eb6b199709b134e68c2d1adc09bafd7e9a17df5b5316ec65eea6ef1a5d4e9549a87ea897ca6f7b2ebf34fa6c1c096a959",
+      "hash_meta": "65519335567faeb7c175ea4b1441c9dd7ba82a11081d72e01a637203a8923d34",
+      "seqno": 5440275
+    },
+    "service": {
+      "entropy": "PuzWTqCtj6y1c3hxvIZdG6Xl",
+      "hostname": "shekhardesigner.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.0.0"
+  },
+  "ctime": 1558703096,
+  "expire_in": 504576000,
+  "prev": "cb3a62605f8ca5d985de5bc4c62e8670b86a98d422379276bcd386bba7d554cc",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvnJQZSE/q4QhAaHHhp0mmm3ciMoaknNKkn4zwBHv7/UKp3BheWxvYWTESpcCDsQgyzpiYF+MpdmF3lvExi6GcLhqmNQiN5J2vNOGu6fVVMzEIIHOMLh89nf8lJSXssAsoZ36M9GlItLTie01i4BiNpEOAgHCo3NpZ8RAOtRcGSAFOI7ktCT3n5ctbUO2pRYbtTarknAAfKxs5VNDZsQDbJkyUc+tIGb+4vW8rgUIXwZvnhihHYtbfnTFA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJyHT9COVamok7vdZh8T6K8zwgnoUYz8uycIZuqOwGTzo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/shekhardesigner
+
+==================================================================

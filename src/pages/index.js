@@ -44,7 +44,8 @@ const Intro = styled.h1`
 
     > small {
         font-size: 60%;
-        background: #FFEB3B;
+        background: #FFD37F;
+        padding: 0 0.5rem;
     }
 
     > span {
@@ -68,6 +69,12 @@ const Intro = styled.h1`
 
     @media screen and (min-width: 700px) {
         font-size: 5rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        > small {
+            color: #222;
+        }
     }
 `;
 
