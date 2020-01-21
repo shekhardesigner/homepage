@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-work-js","path":"/work/","result":{"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+{"componentChunkName":"component---src-pages-work-js","path":"/work/","result":{"data":{"site":{"buildTime":"21/01/2020"}},"pageContext":{"isCreatedByStatefulCreatePages":true,"intl":{"language":"en","languages":["en","ne"],"messages":{"name":"Shekhar","who":"who am I?","work":"my work","langLabel":"Available in:"},"routed":false,"originalPath":"/work/","redirect":true}}}}

@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-about-js","path":"/about/","result":{"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+{"componentChunkName":"component---src-pages-about-js","path":"/about/","result":{"pageContext":{"isCreatedByStatefulCreatePages":true,"intl":{"language":"en","languages":["en","ne"],"messages":{"name":"Shekhar","who":"who am I?","work":"my work","langLabel":"Available in:"},"routed":false,"originalPath":"/about/","redirect":true}}}}
