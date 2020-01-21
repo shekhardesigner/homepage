@@ -34,12 +34,9 @@ const fadeTextAnim = keyframes`
 `;
 
 const Intro = styled.h1`
-    font-size: 3rem;
     position: relative;
     margin-top: 4rem;
-    line-height: 1;
     height: 12rem;
-    font-family: 'Abril Fatface', cursive;
 
     > small {
         font-size: 60%;
@@ -98,8 +95,6 @@ const IntroUL = styled.ul`
             padding-left: 4rem;
             display: block;
             color: #4CAF50;
-            font-family: 'Stalemate', cursive;
-            font-size: 3rem;
             margin: 0 0 1rem; 
 
             &::before,
@@ -185,11 +180,11 @@ const IntroUL = styled.ul`
 const IntroNav = () => {
     const intl = useIntl();
 
-    return <IntroUL>
+    return <IntroUL className="intro-nav">
         <li><Link to="/about">{intl.formatMessage({ id: "who" })}</Link></li>
         <li><Link to="/work">{intl.formatMessage({ id: "work" })}</Link></li>
     </IntroUL>
 };
 
 export { IntroNav };
-export default ({children}) => <Intro>{children}</Intro>
+export default ({children}) => <Intro className="intro">{children}</Intro>

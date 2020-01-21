@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import css from './icons.module.css'
+import css from './icons.module.scss'
 
 export default ({ name, size, color, inline }) => {
     const iconName = `gg${name}`;

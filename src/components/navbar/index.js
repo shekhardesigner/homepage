@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "gatsby"
-import css from './navbar.module.css';
+import css from './navbar.module.scss';
 import Icons from '../icons';
 
 export default () => <nav className={css.nav}>

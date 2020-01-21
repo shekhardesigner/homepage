@@ -12,6 +12,7 @@ module.exports = {
     image: `https://www.shekhardesigner.com/og_card.png`
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
@@ -20,7 +21,8 @@ module.exports = {
         fonts: [
           `Abril Fatface\:400`,
           `Quicksand\:300,500`,
-          `Stalemate`
+          `Stalemate`,
+          `Tillana`
         ],
         display: `swap`
       },

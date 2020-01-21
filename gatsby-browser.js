@@ -1,3 +1,4 @@
 // Global CSS
-import './src/styles/global.css';
-import './src/styles/darkmode.css';
+import './src/scss/global.scss';
+import './src/scss/darkmode.scss';
+import './src/scss/types.scss';

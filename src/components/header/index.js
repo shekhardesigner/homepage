@@ -1,7 +1,11 @@
 import React from "react";
-import { Link } from 'gatsby';
-import css from './header.module.css';
+import { useIntl, Link } from 'gatsby-plugin-intl';
+import css from './header.module.scss';
 
-export default () => <header className={css.header}>
-    <Link to="/" className={css.page_title}>Shekhar</Link>
-</header>
+export default () => {
+    const intl = useIntl();
+
+    return <header className={css.header}>
+        <Link to="/" className={css.page_title}>{intl.formatMessage({ id: "name" })}</Link>
+    </header>
+}

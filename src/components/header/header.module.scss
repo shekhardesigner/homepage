@@ -12,14 +12,14 @@
     position: relative;
     font-size: 1.3rem;
     color: black;
-    display: inline-block
-}
-
-.page_title::after {
-    content: "\02022";
-    position: absolute;
-    color: #f00;
-    top: 0.5rem;
+    display: inline-block;
+    
+    &::after {
+        content: "\02022";
+        position: absolute;
+        color: #f00;
+        top: 0.5rem;
+    }
 }
 
 @media screen and (min-width: 700px) {
