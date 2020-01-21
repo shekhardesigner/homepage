@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { Link } from 'gatsby';
+import { useIntl, Link } from 'gatsby-plugin-intl';
 
 const rotateUpAnim = keyframes`
     0% {
@@ -182,10 +182,14 @@ const IntroUL = styled.ul`
     }
 `;
 
-const IntroNav = () => <IntroUL>
-    <li><Link to="/about">who am I?</Link></li>
-    <li><Link to="/work">my work</Link></li>
-</IntroUL>;
+const IntroNav = () => {
+    const intl = useIntl();
+
+    return <IntroUL>
+        <li><Link to="/about">{intl.formatMessage({ id: "who" })}</Link></li>
+        <li><Link to="/work">{intl.formatMessage({ id: "work" })}</Link></li>
+    </IntroUL>
+};
 
 export { IntroNav };
 export default ({children}) => <Intro>{children}</Intro>

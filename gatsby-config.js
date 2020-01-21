@@ -32,6 +32,15 @@ module.exports = {
         anonymize: true,
         respectDNT: true,
       }
+    },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        path: `${__dirname}/src/intl`,
+        languages: [`en`, `ne`],
+        defaultLanguage: `en`,
+        redirect: true,
+      }
     }
   ]
 }
