@@ -1,9 +1,11 @@
 import React from "react";
 import { useStaticQuery, graphql } from 'gatsby'
+import { useIntl } from 'gatsby-plugin-intl';
 
 import Container from '../components/container';
 import Header from '../components/header'
 import SEO from "../components/seo";
+import Navbar from "../components/navbar";
 
 const query = graphql`
   query Info {
@@ -14,11 +16,12 @@ const query = graphql`
 `
 export default () => {
     const data = useStaticQuery(query);
+    const intl = useIntl();
 
     return <Container>
-        <SEO title="My Work" />
+        <SEO title={intl.formatMessage({ id: "workPageTitle" })} />
         <Header />
-        <h1>My Work.</h1>
+        <h1 className="page-title">{intl.formatMessage({ id: "workPageTitle"})}</h1>
         <article>
             <p>I have been involved in many wonderful software projects during my 12+ years of being in the industry!</p>
             <p>Domains include: Healthcare, Insurance, Fashion houses</p>
@@ -36,5 +39,6 @@ export default () => {
             <br /><br /><br />
             <p><small>A project gallery and few case studies are coming soon!</small><br /><small>Last updated: {data.site.buildTime}</small></p>
         </article>
+        <Navbar />
     </Container>
 };

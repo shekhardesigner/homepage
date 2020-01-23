@@ -65,6 +65,7 @@ const Intro = styled.h1`
 
     @media screen and (min-width: 700px) {
         font-size: 5rem;
+        height: 16rem;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -87,7 +88,7 @@ const IntroUL = styled.ul`
         }
 
         &:not(:last-child) {
-            margin-right: 8rem;
+            margin-right: 3rem;
         }
 
         > a {
@@ -150,16 +151,24 @@ const IntroUL = styled.ul`
                 }
             }
 
-            @media screen and (min-width: 700px) {
+            
+        }
+        @media screen and (min-width: 700px) {
+            &:not(:last-child) {
+                margin-right: 8rem;
+            }
+
+            > a {
+
                 padding-left: 7rem;
                 font-size: 3.5rem;
                 margin: 0;
-
+    
                 &::before,
                 &::after {
                     top: 0;
                 }
-
+    
                 &::before {
                     border-top: 32px solid transparent;
                     border-bottom: 30px solid transparent;
@@ -171,7 +180,6 @@ const IntroUL = styled.ul`
                     border-left: 80px solid #4CAF50;
                 }   
             }
-
         }
 
     }

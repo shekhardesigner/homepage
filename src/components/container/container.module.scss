@@ -7,19 +7,22 @@
 
 .langTool {
     position: absolute;
-    right: 3rem;
+    right: 2rem;
     top: 1rem;
+    z-index: 9998;
     
     > label {
         font-size: 0.825rem;
         letter-spacing: 1px;
+        display: none;
     }
+
     > button {
         display: inline-block;
         width: 2rem;
         height: 2rem;
         border-radius: 3px;
-        overflow: auto;
+        overflow: hidden;
         border: 1px solid #fff;
         background: transparent;
         font-size: 1.2rem;
@@ -47,9 +50,19 @@
         max-width: 1140px;
         padding: 0 3rem;
         margin: 0 auto;
+        height: 100%;
 
         article {
             max-width: 700px;
+        }
+    }
+
+    .langTool {
+        right: 3rem;
+
+        > label {
+            display: inline-block;
+            margin-right: 0.5rem;
         }
     }
 }
