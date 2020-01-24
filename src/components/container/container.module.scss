@@ -1,6 +1,6 @@
 .container {
     padding:3rem 2rem 0;
-    height: calc(100% - 5.5rem);
+    height: calc(100% - 8.5rem);
     overflow: auto;
     position: relative;
 }
@@ -47,12 +47,19 @@
     }
 }
 
+.footer {
+    border-top: 1px dotted #ddd;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.825rem;
+}
+
 @media screen and (min-width: 700px) {
     .container {
         max-width: 1140px;
         padding: 0 3rem;
         margin: 0 auto;
-        height: 100%;
+        height: calc(100% - 3.1rem);
 
         article {
             max-width: 700px;

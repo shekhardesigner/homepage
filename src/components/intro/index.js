@@ -185,6 +185,23 @@ const IntroUL = styled.ul`
     }
 `;
 
+const SocialUL = styled.ul`
+    list-style: none;
+    margin: 0 0 2rem;
+    padding: 0;
+    font-size: 1rem;
+
+    > li {
+        display: inline;
+
+        > a {
+            margin-right: 1rem;
+            color: #444;
+            border-bottom: 1px dashed #666;
+        }
+    }
+`
+
 const IntroNav = () => {
     const intl = useIntl();
 
@@ -194,5 +211,15 @@ const IntroNav = () => {
     </IntroUL>
 };
 
-export { IntroNav };
+const SocialNav = () => {
+    const intl = useIntl();
+
+    return <SocialUL>
+        <li><a href="https://www.cssjunction.com" rel="follow noopener noreferrer">{intl.formatMessage({ id: "blog"})}</a></li>
+        <li><a href="https://github.com/shekhardesigner" rel="nofollow noopener noreferrer">{intl.formatMessage({ id: "github"})}</a></li>
+        <li><a href="https://stackoverflow.com/users/2621325/shekhar-k-sharma" rel="nofollow noopener noreferrer">{intl.formatMessage({ id: "stackOverflow"})}</a></li>
+    </SocialUL>
+}
+
+export { IntroNav, SocialNav };
 export default ({children}) => <Intro className="intro">{children}</Intro>

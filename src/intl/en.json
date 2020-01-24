@@ -1,5 +1,6 @@
 {
     "name": "Shekhar",
+    "fullname": "Shekhar K. Sharma",
     "who": "who am I?",
     "work": "my work",
     "langLabel": "Available in:",
@@ -11,5 +12,8 @@
     "homeIam": "I'm a",
     "homeUxDesigner": "UX Designer",
     "homeFullStack": "Full-stack Developer",
-    "homeSwEng": "Software Engineer"
+    "homeSwEng": "Software Engineer",
+    "blog": "Blog",
+    "github": "Github",
+    "stackOverflow": "Stack Overflow"
 }

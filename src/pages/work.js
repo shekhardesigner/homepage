@@ -6,6 +6,7 @@ import Container from '../components/container';
 import Header from '../components/header'
 import SEO from "../components/seo";
 import Navbar from "../components/navbar";
+import { SocialNav } from "../components/intro";
 
 const query = graphql`
   query Info {
@@ -39,6 +40,7 @@ export default () => {
             <br /><br /><br />
             <p><small>A project gallery and few case studies are coming soon!</small><br /><small>Last updated: {data.site.buildTime}</small></p>
         </article>
+        <SocialNav />
         <Navbar />
     </Container>
 };

@@ -5,6 +5,7 @@ import Header from '../components/header'
 import SEO from '../components/seo';
 import Icons from '../components/icons';
 import Navbar from '../components/navbar';
+import { SocialNav } from '../components/intro';
 
 export default () => {
     const intl = useIntl();
@@ -19,8 +20,9 @@ export default () => {
             <p>By 2014, I was already working for the world's top tech company.</p>
             <p>As of 2020, I am back in my native country Nepal having traveled half of the world.</p>
             <p>Speaking of my <strong>skillset</strong>, I posses strong knowledge in JavaScript (NodeJS, React, SailsJS), User Experience design (Prototyping new solutions), etc.</p>
-            <p>View My <a target='_blank' rel='nofollow' href='/Shekhar_K_Sharma_Public_Resume.pdf'>Resume <Icons size='s' name='External' inline /></a>.</p>
+            <p>View My <a rel="nofollow noopener noreferrer" href="/Shekhar_K_Sharma_Public_Resume.pdf">Resume <Icons size="s" name="External" inline /></a>.</p>
         </article>
+        <SocialNav />
         <Navbar />
     </Container>
 }

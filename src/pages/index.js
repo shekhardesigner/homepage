@@ -3,7 +3,7 @@ import { useIntl } from 'gatsby-plugin-intl';
 import SEO from '../components/seo';
 import Container from '../components/container';
 import Header from '../components/header'
-import Intro, { IntroNav } from '../components/intro'
+import Intro, { IntroNav, SocialNav } from '../components/intro'
 
 export default () => {
     const intl = useIntl();
@@ -18,5 +18,6 @@ export default () => {
             <span>{intl.formatMessage({ id: "homeFullStack"})}</span>
         </Intro>
         <IntroNav />
+        <SocialNav />
     </Container>
 }
