@@ -19,28 +19,30 @@ export default () => {
     const data = useStaticQuery(query);
     const intl = useIntl();
 
-    return <Container>
+    return <Container nav>
         <SEO title={intl.formatMessage({ id: "workPageTitle" })} />
         <Header />
         <h1 className="page-title">{intl.formatMessage({ id: "workPageTitle"})}</h1>
         <article>
-            <p>I have been involved in many wonderful software projects during my 12+ years of being in the industry!</p>
-            <p>Domains include: Healthcare, Insurance, Fashion houses</p>
-            <h2>Skills, used in past projects:</h2>
+            <p>In the past, I am involved in many beautiful software projects during my 12+ years of being in the industry.</p>
+            <p>Domains include healthcare, insurance, fashion houses, design studios, government agencies, and social services to name few.</p>
+            <h2>Highlights:</h2>
             <ul style={{marginLeft: '2rem'}}>
                 <li>NodeJS (SailsJS, Fastify, NestJS)</li>
-                <li>SQL Server, MySQL, PostgreSQL, MongoDB</li>
-                <li>PHP (WordPress), ASP.net Core</li>
-                <li>React and React Native, a bit of Angular@1</li>
+                <li>SQL Server, MySQL, MongoDB</li>
+                <li>PHP (WordPress and Laravel)</li>
+                <li>React and React Native</li>
+                <li>Python (Flask, CLI, Tkinter, wxPython)</li>
+                <li>Go (Learning nowadays...))</li>
             </ul>
             <br />
             <h2>Want to talk?</h2>
-            <p>Interested in sharing project work? - write me: work at shekhardesigner dot com</p>
-            <p>I stay away, as much as possible, from all FAANG and other social media channels. If you wish to communicate via an encrypted method, please contact me on <a href="https://keybase.io/shekhardesigner/">Keybase - @shekhardesigner</a></p>
-            <br /><br /><br />
+            <p>Should you need to discuss a project? - write to me: work@&lt;this_website_address&gt;</p>
+
+            <br />
+            <SocialNav />
             <p><small>A project gallery and few case studies are coming soon!</small><br /><small>Last updated: {data.site.buildTime}</small></p>
         </article>
-        <SocialNav />
         <Navbar />
     </Container>
 };

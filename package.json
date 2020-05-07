@@ -19,21 +19,21 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.18.12",
-    "gatsby-plugin-google-analytics": "^2.1.33",
-    "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-intl": "^0.3.2",
-    "gatsby-plugin-react-helmet": "^3.1.21",
-    "gatsby-plugin-sass": "^2.1.27",
-    "gatsby-plugin-styled-components": "^3.1.17",
-    "node-sass": "^4.13.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "styled-components": "^5.0.0"
+    "babel-plugin-styled-components": "1.10.7",
+    "gatsby": "2.21.19",
+    "gatsby-plugin-google-analytics": "2.3.1",
+    "gatsby-plugin-google-fonts": "1.0.1",
+    "gatsby-plugin-intl": "0.3.3",
+    "gatsby-plugin-react-helmet": "3.3.1",
+    "gatsby-plugin-sass": "2.3.1",
+    "gatsby-plugin-styled-components": "3.3.1",
+    "node-sass": "4.14.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "6.0.0",
+    "styled-components": "5.1.0"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "2.0.5"
   }
 }

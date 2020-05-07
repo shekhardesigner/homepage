@@ -5,13 +5,15 @@ import { useIntl, IntlContextConsumer, changeLocale } from 'gatsby-plugin-intl';
 const languageName = {
   en: '🇺🇸',
   ne: '🇳🇵',
+  fr: '🇫🇷',
 };
 
-export default ({ children }) => {
+export default ({ children, nav }) => {
   const intl = useIntl();
+  const hasNav = nav;
   
   return <IntlContextConsumer>
-      {({ languages, language: currentLocale }) => <><div className={`${css.container} intl-${currentLocale}`}>
+      {({ languages, language: currentLocale }) => <><div className={`${css.container} intl-${currentLocale} ${hasNav ? css.hasNav : css.noNav}`}>
         <div className={css.langTool}>
           <label>{intl.formatMessage({ id: "langLabel" })} </label>
           { languages.map(lang => (

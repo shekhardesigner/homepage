@@ -214,10 +214,17 @@ const IntroNav = () => {
 const SocialNav = () => {
     const intl = useIntl();
 
+    const linkedInUls = {
+        en: 'https://www.linkedin.com/in/shekhardesigner/?locale=en_US',
+        ne: 'https://www.linkedin.com/in/shekhardesigner/?locale=xx_XX',
+        fr: 'https://www.linkedin.com/in/shekhardesigner/?locale=fr_FR'
+    }
+
     return <SocialUL>
         <li><a href="https://www.cssjunction.com" rel="follow noopener noreferrer">{intl.formatMessage({ id: "blog"})}</a></li>
         <li><a href="https://github.com/shekhardesigner" rel="nofollow noopener noreferrer">{intl.formatMessage({ id: "github"})}</a></li>
         <li><a href="https://stackoverflow.com/users/2621325/shekhar-k-sharma" rel="nofollow noopener noreferrer">{intl.formatMessage({ id: "stackOverflow"})}</a></li>
+        <li><a href={linkedInUls[intl.locale]} rel="nofollow noopener noreferrer">{intl.formatMessage({ id: "lnkd"})}</a></li>
     </SocialUL>
 }
 
