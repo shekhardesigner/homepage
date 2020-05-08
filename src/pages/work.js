@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { useIntl } from 'gatsby-plugin-intl';
 
 import Container from '../components/container';
-import Header from '../components/header'
 import SEO from "../components/seo";
 import Navbar from "../components/navbar";
 import { SocialNav } from "../components/intro";
@@ -21,7 +20,6 @@ export default () => {
 
     return <Container nav>
         <SEO title={intl.formatMessage({ id: "workPageTitle" })} />
-        <Header />
         <h1 className="page-title">{intl.formatMessage({ id: "workPageTitle"})}</h1>
         <article>
             <p>In the past, I am involved in many beautiful software projects during my 12+ years of being in the industry.</p>
@@ -33,7 +31,7 @@ export default () => {
                 <li>PHP (WordPress and Laravel)</li>
                 <li>React and React Native</li>
                 <li>Python (Flask, CLI, Tkinter, wxPython)</li>
-                <li>Go (Learning nowadays...))</li>
+                <li>Go (Learning nowadays...)</li>
             </ul>
             <br />
             <h2>Want to talk?</h2>

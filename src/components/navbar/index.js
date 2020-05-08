@@ -16,7 +16,7 @@ export default () => {
             </li>
             <li className={css.navLink}>
                 <Link activeClassName={css.active} to="/work">
-                    <Icons name="Album" size="m" />
+                    <Icons name="Briefcase" size="m" />
                     <span className={css.linkText}>{intl.formatMessage({ id: "workMobNav" })}</span>
                 </Link>
             </li>

@@ -1,7 +1,5 @@
 .container {
     padding:1rem 2rem 0;
-    height: calc(100% - 8.5rem);
-    overflow: auto;
     position: relative;
 
     h1 {
@@ -13,22 +11,12 @@
     }
 
     &.has-nav {
-        box-shadow: inset 0px -6px 4px -5px rgba(0,0,0,0.1)
+        padding-bottom: 6rem;
     }
 }
 
 .langTool {
-    position: sticky;
-    float: right;
-    top: 0.2rem;
-    z-index: 9998;
-    width: 6rem;
-    
-    > label {
-        font-size: 0.825rem;
-        letter-spacing: 1px;
-        display: none;
-    }
+    display: flex;
 
     > button {
         display: inline-block;
@@ -36,32 +24,31 @@
         height: 2rem;
         border-radius: 3px;
         overflow: hidden;
-        border: 1px solid #fff;
+        border: 0;
         background: transparent;
-        font-size: 1.2rem;
+        font-size: 0.825rem;
         cursor: pointer;
-        transition: border 0.3s cubic-bezier(.82, .1, .14, 2.12);
+        transition: color 0.3s cubic-bezier(.82, .1, .14, 2.12);
         text-align: center;
         padding: 0;
 
-        &:disabled {
-            opacity: 0.7;
-            color: #000;
+        @media (prefers-color-scheme: dark) {
+            color: #fff;
         }
 
         &.active {
-            border-color: #ccc;
+            color: #f16500;
+            font-style: italic;
         }
 
-        &:hover,
-        &:focus {
-            border-color: #FFD37F;
+        &:not(.active):hover,
+        &:not(.active):focus {
+            color: #f16500;
         }
     }
 }
 
 .footer {
-    border-top: 1px dotted #ddd;
     padding: 1rem 0;
     text-align: center;
     font-size: 0.825rem;
@@ -79,12 +66,7 @@
         }
     }
 
-    .langTool {
-        width: 12rem;
-
-        > label {
-            display: inline-block;
-            margin-right: 0.5rem;
-        }
+    footer {
+        margin-top: 10rem;
     }
 }

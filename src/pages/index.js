@@ -1,16 +1,14 @@
 import React from 'react'
 import { useIntl } from 'gatsby-plugin-intl';
-import SeoMeta from '../components/seo';
+import SEO from '../components/seo';
 import Container from '../components/container';
-import Header from '../components/header'
 import Intro, { IntroNav, SocialNav } from '../components/intro'
 
 export default () => {
     const intl = useIntl();
 
     return <Container>
-        <SeoMeta />
-        <Header />
+        <SEO />
         <Intro>
             <small>{intl.formatMessage({ id: "homeIam"})}</small>
             <span>{intl.formatMessage({ id: "homeUxDesigner"})}</span>

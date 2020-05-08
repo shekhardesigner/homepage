@@ -76,7 +76,7 @@ const Intro = styled.h1`
 `;
 
 const IntroUL = styled.ul`
-    margin: 5rem 0 2rem;
+    margin: 5rem 0 7rem;
     padding: 0;
     list-style: none;
 
@@ -198,6 +198,17 @@ const SocialUL = styled.ul`
             margin-right: 1rem;
             color: #444;
             border-bottom: 1px dashed #666;
+            transition: color 0.3s cubic-bezier(.82, .1, .14, 2.12);
+
+            @media (prefers-color-scheme: dark) {
+                color: #eee;
+                border-bottom-color: #fff;
+            }
+
+            &:hover,
+            &:focus {
+                color: #f16500;
+            }
         }
     }
 `

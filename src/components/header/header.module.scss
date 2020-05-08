@@ -1,19 +1,29 @@
 .header {
-    padding: 1rem 2rem;
-    position: fixed;
+    padding: 0 0 1rem;
+    position: sticky;
     top: 0;
-    left: 0;
     background: #fff;
     z-index: 9997;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (prefers-color-scheme: dark) {
+        background: #333;
+    }
+
+    @media screen and (min-width: 700px) {
+        padding-top: 1rem;
+    }
 }
 
-.page_title {
+.siteName {
     font-weight: 400;    
     position: relative;
     font-size: 1.3rem;
     color: black;
     display: inline-block;
+    padding: 0.3rem 0 0;
     
     &::after {
         content: "\02022";
@@ -21,21 +31,11 @@
         color: #f00;
         top: 0.5rem;
     }
-}
-
-@media screen and (min-width: 700px) {
-    .header {
-        position: static;
-        padding: 1rem 0 3rem;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .header {
-        background: #333;
-    }
-
-    .page_title {
+    
+    @media (prefers-color-scheme: dark) {
         color: #eee;
+    }
+    @media screen and (min-width: 700px) {
+        padding: 0;
     }
 }
