@@ -7,7 +7,7 @@ In summary, I can take a concept, be it just an idea or a predefined set of requ
 
 It has been nearly twelve years since I have been programming. 
 
-#### _DO(s)_
+### _DO(s)_
 Reach out to me for project offers, job offers or to chat about anything.
 
 ### _DON'T(s)_
