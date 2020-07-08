@@ -11,6 +11,6 @@ It has been nearly twelve years since I have been programming.
 Reach out to me for project offers, job offers or to chat about anything.
 
 ### _DON'T(s)_
-Please don't ask me to do algorithm test. That's not cool.
+Please don't ask me to do a algorithm test. That's not cool.
 
 Wanna know more? - check out my [website](https://www.shekhardesigner.com)
