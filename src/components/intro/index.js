@@ -239,5 +239,7 @@ const SocialNav = () => {
     </SocialUL>
 }
 
+const IntroWrap = ({children}) => <Intro className="intro">{children}</Intro>
+
 export { IntroNav, SocialNav };
-export default ({children}) => <Intro className="intro">{children}</Intro>
+export default IntroWrap;

@@ -1,16 +1,16 @@
 import React from 'react';
 import { useIntl } from 'gatsby-plugin-intl';
 import Container from '../components/container';
-import SEO from '../components/seo';
+import SeoMeta from '../components/seo';
 import Icons from '../components/icons';
 import Navbar from '../components/navbar';
 import { SocialNav } from '../components/intro';
 
-export default () => {
+const AboutPage = () => {
     const intl = useIntl();
 
     return <Container nav>
-        <SEO title={intl.formatMessage({ id: "aboutPageTitle" })} />
+        <SeoMeta title={intl.formatMessage({ id: "aboutPageTitle" })} />
         <h1 className="page-title">{intl.formatMessage({ id: "aboutPageTitle"})}</h1>
         <article>
             <p>A self-taught, ever learning software engineering professional. Began my career in 2008 as a Jr. Web Designer with a precise role to design mockups in Photoshop, I quickly started to learn HTML/CSS Programming.</p>
@@ -24,3 +24,5 @@ export default () => {
         <Navbar />
     </Container>
 }
+
+export default AboutPage;

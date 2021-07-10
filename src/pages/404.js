@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/container";
 import Navbar from "../components/navbar";
 
-export default () => (
+const NotFoundPage = () => (
   <Container nav>
     <br />
     <br />
@@ -11,3 +11,5 @@ export default () => (
     <Navbar />
   </Container>
 );
+
+export default NotFoundPage;

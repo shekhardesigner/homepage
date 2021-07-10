@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { useIntl } from 'gatsby-plugin-intl';
 
 import Container from '../components/container';
-import SEO from "../components/seo";
+import SeoMeta from "../components/seo";
 import Navbar from "../components/navbar";
 import { SocialNav } from "../components/intro";
 
@@ -14,12 +14,12 @@ const query = graphql`
     }
   }
 `
-export default () => {
+const WorkPage = () => {
     const data = useStaticQuery(query);
     const intl = useIntl();
 
     return <Container nav>
-        <SEO title={intl.formatMessage({ id: "workPageTitle" })} />
+        <SeoMeta title={intl.formatMessage({ id: "workPageTitle" })} />
         <h1 className="page-title">{intl.formatMessage({ id: "workPageTitle"})}</h1>
         <article>
             <p>In the past, I am involved in many beautiful software projects during my 12+ years of being in the industry.</p>
@@ -44,3 +44,5 @@ export default () => {
         <Navbar />
     </Container>
 };
+
+export default WorkPage;

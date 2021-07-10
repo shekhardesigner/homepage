@@ -1,5 +1,5 @@
 /**
- * Component: Seo
+ * Component: SeoMeta
  */
 
 import React from "react"
@@ -7,7 +7,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, lang, meta, title }) {
+const SeoMeta = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -88,17 +88,17 @@ function Seo({ description, lang, meta, title }) {
   )
 };
 
-Seo.defaultProps = {
+SeoMeta.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
 };
 
-Seo.propTypes = {
+SeoMeta.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
 };
 
-export default Seo;
+export default SeoMeta;
