@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './terminal.module.css';
+import css from './terminal.module.scss';
 import styled from 'styled-components';
 
 const Input = styled.input`

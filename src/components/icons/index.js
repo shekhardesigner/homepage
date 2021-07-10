@@ -3,9 +3,9 @@
  */
 
 import React from 'react';
-import css from './icons.module.css'
+import css from './icons.module.scss'
 
-export default ({ name, size, color }) => {
+export default ({ name, size, color, inline }) => {
     const iconName = `gg${name}`;
-    return <i className={`icon ${css[iconName]} icon-${size}`} style={{color: color}}></i>
+    return <i className={`icon ${css[iconName]} icon-${size ? size : `r`} icon-${inline ? `i` : `b`}`} style={{color: color}}></i>
 }

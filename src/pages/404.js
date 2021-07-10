@@ -1,6 +1,13 @@
-import React from 'react';
-import Container from '../components/container';
+import React from "react";
+import Container from "../components/container";
+import Navbar from "../components/navbar";
 
-export default () => <Container>
-    <h1>404</h1>
-</Container>
+export default () => (
+  <Container nav>
+    <br />
+    <br />
+    <br />
+    <h1 className="page-title" style={{textAlign:'center'}}>Oop! <br/>Found nothing!</h1>
+    <Navbar />
+  </Container>
+);
